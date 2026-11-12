@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Enviar Sugestão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">Game<span>Hub</span></a>
+            <ul class="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Sugestões</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pagina-formulario">
+        <section class="formulario-container">
+            <p class="destaque">FAÇA PARTE DA COMUNIDADE</p>
+            <h1>Indique seu jogo favorito!</h1>
+            <p class="descricao-form">
+                Conhece algum jogo incrível? Compartilhe sua indicação
+                com a comunidade GameHub.
+            </p>
+            <form id="formSugestao" action="formAction.html" method="GET">
+                <div class="grupo-campo">
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                        minlength="3"
+                        pattern="[A-Za-zÀ-ÿ' \-]{3,}"
+                        title="Digite pelo menos 3 letras, sem números."
+                        >
+                </div>
+                <div class="grupo-campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        required
+                    >
+                </div>
+                <div class="grupo-campo">
+                    <label for="jogo">Nome do jogo:</label>
+                    <input
+                        type="text"
+                        id="jogo"
+                        name="jogo"
+                        placeholder="Qual jogo você recomenda?"
+                        required
+                        minlength="2"
+                    >
+                </div>
+                <div class="grupo-campo">
+                    <label for="genero">Gênero do jogo:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione um gênero</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="RPG">RPG</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Estratégia">Estratégia</option>
+                        <option value="Simulação">Simulação</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="grupo-campo">
+                    <label for="motivo">Por que você recomenda esse jogo?</label>
+                    <textarea
+                        id="motivo"
+                        name="motivo"
+                        rows="5"
+                        placeholder="Conte um pouco sobre sua experiência..."
+                        required
+                        minlength="10"
+                        maxlength="300"
+                    ></textarea>
+                </div>
+                <button type="submit" class="botao botao-enviar">
+                    Enviar sugestão
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 GameHub - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

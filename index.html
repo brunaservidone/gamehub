@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub | Universo Gamer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">Game<span>Hub</span></a>
+            <ul class="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Sugestões</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="destaque">SEU UNIVERSO GAMER</p>
+                <h1>Descubra seu próximo <span>jogo favorito.</span></h1>
+                <p class="descricao">
+                    Explore o universo dos games, descubra novos títulos
+                    e compartilhe suas experiências com outros jogadores.
+                </p>
+                <a href="#jogos" class="botao">Explorar jogos</a>
+            </div>
+        </section>
+        <section class="jogos" id="jogos">
+            <h2>Jogos em destaque</h2>
+            <p class="subtitulo">
+                Confira alguns títulos que merecem sua atenção.
+            </p>
+<input
+    type="text"
+    id="buscaJogos"
+    class="campo-busca"
+    placeholder="Pesquisar jogo..."
+    aria-label="Pesquisar jogo"
+>
+            <p id="semResultado" class="sem-resultado" hidden>Nenhum jogo encontrado.</p>
+            <div class="jogos-container">
+                <article class="jogo-card">
+                    <div class="jogo-imagem">
+                        <img src="imagens/last-of-us.jpg" alt="Imagem do jogo The Last of Us">
+                    </div>
+                    <h3>The Last of Us</h3>
+                    <p>Ação, aventura e sobrevivência em um mundo pós-apocalíptico.</p>
+                </article>
+                <article class="jogo-card">
+                    <div class="jogo-imagem">
+                        <img src="imagens/elden-ring.jpg" alt="Imagem do jogo Elden Ring">
+                    </div>
+                    <h3>Elden Ring</h3>
+                    <p>Explore um mundo fantástico cheio de desafios e mistérios.</p>
+                </article>
+                <article class="jogo-card">
+                    <div class="jogo-imagem">
+                        <img src="imagens/minecraft.jpg" alt="Imagem do jogo Minecraft">
+                    </div>
+                    <h3>Minecraft</h3>
+                    <p>Construa, explore e crie suas próprias aventuras.</p>
+                </article>
+            </div>
+        </section>
+        <section class="convite">
+            <h2>Tem algum jogo para recomendar?</h2>
+            <p>Compartilhe sua sugestão com a comunidade GameHub!</p>
+            <a href="form.html" class="botao">Enviar sugestão</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 GameHub - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
