@@ -2,8 +2,7 @@
 
 Site sobre jogos eletrônicos onde a pessoa pode conhecer títulos em destaque, pesquisar jogos e **enviar sugestões** por um formulário. Projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
 
-**Vídeo de demonstração:** https://youtu.be/FR5ugDvQsdA
-**Ver online:** https://SEU-USUARIO.github.io/gamehub/
+**Ver online:** https://brunaservidone.github.io/gamehub/
 
 ## Funcionalidades
 
